@@ -63,6 +63,7 @@
     <Content Include="floating-labels.css" />
     <Content Include="guest-signup.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="loggedIn.aspx" />
     <Content Include="login.aspx" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
@@ -86,6 +87,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loggedIn.aspx.cs">
+      <DependentUpon>loggedIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loggedIn.aspx.designer.cs">
+      <DependentUpon>loggedIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>

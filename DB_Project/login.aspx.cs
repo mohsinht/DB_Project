@@ -17,7 +17,8 @@ namespace DB_Project
             System.Configuration.ConfigurationManager.ConnectionStrings["sqlCon1"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["username"] != null)
+                Response.Redirect("loggedIn.aspx");
         }
         protected void login(object sender, EventArgs e)
         {
@@ -57,6 +58,9 @@ namespace DB_Project
                     throw new System.ArgumentException("Login Failed! Your username or password is incorrect.", "");
                 }
                 showErrorsl.Text = "<div style=\"color:green\">Logged in successfully!</div>";
+                Session["username"] = inputNamel.Text;
+                Session["type"] = cmd.Parameters["@usertype"].Value.ToString();
+                Response.Redirect("loggedIn.aspx");
             }
             catch (Exception ex)
             {
