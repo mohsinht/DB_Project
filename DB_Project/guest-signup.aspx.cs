@@ -59,6 +59,7 @@ namespace DB_Project
                     throw new System.ArgumentException("Email or username already exists", "");
                 }
                 showErrorsg.Text = "<div style=\"color:green\">Signed up successfully!</div>";
+                Session["newlyCreated"] = "1";
                 Response.Redirect("login.aspx");
             }
             catch (Exception ex)

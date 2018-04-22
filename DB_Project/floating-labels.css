@@ -20,6 +20,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f5f5f5;
+      margin-bottom: 50px;
 }
 
 .form-signin {
@@ -27,6 +28,7 @@ body {
   max-width: 420px;
   padding: 15px;
   margin: auto;
+  -webkit-margin-after: 50px;
 }
 
 .form-label-group {
@@ -95,4 +97,5 @@ body {
     box-shadow: black;
     box-shadow: 0px 1px 15px 0px #00000038;
         border-radius: 6px;
+            -webkit-margin-after: 50px;
 }

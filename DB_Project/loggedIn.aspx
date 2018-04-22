@@ -19,9 +19,7 @@
 <body>
 
     <style>
-    .form-signin{
-          margin-bottom: 0px;
-    }
+
     </style>
     <form class="form-signin" runat="server">
       <div class="text-center mb-4">
@@ -46,5 +44,7 @@
       <asp:Button OnClick="logout" CssClass="btn btn-lg btn-primary btn-block" runat="server" ID="registerButtond" Text="Logout"/>
       <p class="mt-2 mb-3 text-muted text-center">FAST-NU Room Sharing App &copy; 2017-2018</p>
     </form>
+
+ 
 </body>
 </html>

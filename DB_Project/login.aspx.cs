@@ -19,6 +19,8 @@ namespace DB_Project
         {
             if (Session["username"] != null)
                 Response.Redirect("loggedIn.aspx");
+            if (Session["newlyCreated"] != null)
+                showErrorsl.Text = "<div style=\"color:green\">Your account has been successfully created. Login to continue!</div>";
         }
         protected void login(object sender, EventArgs e)
         {
@@ -60,6 +62,7 @@ namespace DB_Project
                 showErrorsl.Text = "<div style=\"color:green\">Logged in successfully!</div>";
                 Session["username"] = inputNamel.Text;
                 Session["type"] = cmd.Parameters["@usertype"].Value.ToString();
+                Session["newlyCreated"] = null;
                 Response.Redirect("loggedIn.aspx");
             }
             catch (Exception ex)

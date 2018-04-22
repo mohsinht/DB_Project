@@ -7,13 +7,14 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
-
+using Registration;
 namespace DB_Project
 {
     public partial class host_signup : System.Web.UI.Page
     {
         private static readonly string connString =
             System.Configuration.ConfigurationManager.ConnectionStrings["sqlCon1"].ConnectionString;
+        public static bool isNew;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -62,11 +63,13 @@ namespace DB_Project
                     throw new System.ArgumentException("Email or username already exists", "");
                 }
                 showErrors.Text = "<div style=\"color:green\">Signed up successfully!</div>";
+                Session["newlyCreated"] = "1";
                 Response.Redirect("login.aspx");
             }
             catch(Exception ex)
             {
                 showErrors.Text = ex.Message;
+                isNew = false;
             }
             finally
             {

@@ -19,9 +19,6 @@
 <body>
 
     <style>
-    .form-signin{
-          margin-bottom: 30px;
-    }
     </style>
     <form class="form-signin" runat="server">
 <div class="text-center mb-4">
