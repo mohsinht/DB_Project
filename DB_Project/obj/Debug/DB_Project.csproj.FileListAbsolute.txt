@@ -1,0 +1,6 @@
+c:\users\mohsin hayat\documents\visual studio 2015\Projects\DB_Project\DB_Project\bin\DB_Project.dll.config
+c:\users\mohsin hayat\documents\visual studio 2015\Projects\DB_Project\DB_Project\bin\DB_Project.dll
+c:\users\mohsin hayat\documents\visual studio 2015\Projects\DB_Project\DB_Project\bin\DB_Project.pdb
+c:\users\mohsin hayat\documents\visual studio 2015\Projects\DB_Project\DB_Project\obj\Debug\DB_Project.csprojResolveAssemblyReference.cache
+c:\users\mohsin hayat\documents\visual studio 2015\Projects\DB_Project\DB_Project\obj\Debug\DB_Project.dll
+c:\users\mohsin hayat\documents\visual studio 2015\Projects\DB_Project\DB_Project\obj\Debug\DB_Project.pdb
