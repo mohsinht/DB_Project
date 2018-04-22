@@ -17,7 +17,8 @@ namespace DB_Project
         public static bool isNew;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["username"] != null)
+                Response.Redirect("loggedIn.aspx");
         }
         protected void signup_Host(object sender, EventArgs e)
         {
