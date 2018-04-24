@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="guest-signup.aspx.cs" Inherits="DB_Project.host_signup" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="guest-signup.aspx.cs" Inherits="DB_Project.guest_signup" %>
 
 <!DOCTYPE html>
 

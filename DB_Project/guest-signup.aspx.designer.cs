@@ -10,7 +10,7 @@
 namespace DB_Project {
     
     
-    public partial class host_signup {
+    public partial class guest_signup {
         
         /// <summary>
         /// showErrorsg control.
